@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tag Video</title>
+  </head>
+  <body class="body">
+    <h1>Dois reais ou um presente misterioso</h1>
+
+    <div>
+      <button  id="btn">2.00 REAIS</button>
+      <a target="_blank" href="poge2.html"><button>PRESENTE MISTERIOSO</button></a>
+    </div>
+
+  <script >
+     const btns = document.getElementById("btn")
+
+     btns.addEventListener('click', () =>{
+       const newX = Math.random() * 500
+       const newY = Math.random() * 300
+
+       btns.style.left = `${newX}px`
+       btns.style.top = `${newY}px`
+       
+     })
+
+  </script>
+  </body>
+</html>
